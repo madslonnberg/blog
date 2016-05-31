@@ -1,0 +1,29 @@
+svg.head {
+  .piece-animation {
+    animation: fade-out 2s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fade-out {
+    to {
+      opacity: 0
+    }
+  }
+}
+
+.breath {
+  animation: breath 7s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1)
+  }
+  45%,
+  50% {
+    transform: scale(1.08)
+  }
+  100% {
+    transform: scale(1)
+  }
+}

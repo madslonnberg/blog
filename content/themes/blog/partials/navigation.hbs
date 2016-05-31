@@ -1,0 +1,14 @@
+<nav >
+  <div class="grid content">
+    <div class="svg breath">
+      {{> introduction/head}}
+    </div>
+
+    <ul>
+      {{#foreach navigation}}
+        <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+      {{/foreach}}
+    </ul>
+  </div>
+
+</nav>

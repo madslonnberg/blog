@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import './_*.scss';
+@import '../components/**/*.scss';
+
+*{
+  box-sizing:border-box;
+}
+
+
+body{
+  display:flex;
+}
+
+aside{
+  width:10vw;
+  background: red;
+}
+
+main{
+  width:90vw;
+}
+
+
+.item, .sizer{
+  width: 30%;
+}
+
+.item{
+  height:100px;
+  background: red;
+  margin-bottom: 10px;
+}
+
+.gutter{
+  width:10px;
+}

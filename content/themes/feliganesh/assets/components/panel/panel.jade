@@ -1,0 +1,5 @@
+.panel(ng-controller="panelController")
+	.sizer
+	.item(ng-repeat="item in images" monitor="")
+		a(ng-href="{{item.link}}") #[img(ng-src="{{item.src}}")]
+		.caption {{item.caption}}

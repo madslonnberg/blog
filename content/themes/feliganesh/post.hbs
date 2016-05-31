@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{{> head}}
+
+<body ng-app="ganesh">
+  {{navigation}}
+  {{#post}}
+    <main>
+      <div class="grid center">
+        <div class="s-10">
+          <h1 class="title">{{title}}</h1>
+          <p class="text">
+            {{content}}
+          </p>
+        </div>
+      </div>
+    </main>
+  {{/post}}
+</body>
+
+</html>

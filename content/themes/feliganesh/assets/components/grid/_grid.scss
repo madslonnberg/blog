@@ -1,0 +1,209 @@
+$gutter: (
+  small: 5.09px/16px * 1rem,
+  medium: 20px/16px *1rem
+);
+$hspace: 1rem;
+$columns: 12;
+
+*{
+  box-sizing:border-box;
+}
+
+.grid {
+	max-width: 62.18rem;
+	margin:0 auto;
+	@media(min-width: 768px){
+		padding:map-get($gutter, medium);
+	}
+
+
+	
+
+
+	.grid{
+		padding:0;
+	}
+
+  // &>*{
+  // 	&:not(:last-child):not(:first-child){
+  //   	padding-right:map-get($gutter, small);
+    	
+  //   	@media(min-width: 768px){
+		// 	padding-right:map-get($gutter, medium);
+		// }
+    	
+
+  // 	}
+  // }
+
+
+}
+
+.center {
+  &>*{
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+}
+r
+.column{
+	float: none !important;
+
+}
+
+.row{
+	&:after {
+	    content:'';
+	    display:block;
+	    clear: both;
+	}
+
+  &>*{
+    float:left;
+    &:last-child:not(:first-child){
+      float:right;
+    }
+
+  }
+}
+
+//Mobile first
+.s-full {
+	width: 100%;
+	margin-bottom: $hspace;
+}
+
+.s-2 {
+	width: 2/$columns*100%;
+}
+
+.s-3 {
+	width: 3/$columns*100%;
+}
+
+.s-4 {
+	width: 4/$columns*100%;
+}
+
+.s-5 {
+	width: 5/$columns*100%;
+}
+
+.s-6 {
+	width: 6/$columns*100%;
+}
+
+.s-7 {
+	width: 7/$columns*100%;
+}
+
+.s-8 {
+	width: 8/$columns*100%;
+}
+
+.s-9 {
+	width: 9/$columns*100%;
+}
+
+.s-10 {
+	width: 10/$columns*100%;
+}
+
+
+@media(max-height: 48rem){
+	.show-for-medium-up{
+		display:none;	
+	}
+}
+
+@media (min-width: 48rem) {
+	.show-for-medium-up{
+		display:block;	
+	}
+
+
+	.m-full {
+		width: 100%;
+		margin-bottom: $hspace;
+	}
+
+	.m-2 {
+		width: 2/$columns*100%;
+	}
+
+	.m-3 {
+		width: 3/$columns*100%;
+	}
+
+	.m-4 {
+		width: 4/$columns*100%;
+	}
+
+	.m-5 {
+		width: 5/$columns*100%;
+	}
+
+	.m-6 {
+		width: 6/$columns*100%;
+	}
+
+	.m-7 {
+		width: 7/$columns*100%;
+	}
+
+	.m-8 {
+		width: 8/$columns*100%;
+	}
+
+	.m-9 {
+		width: 9/$columns*100%;
+	}
+
+	.m-10 {
+		width: 10/$columns*100%;
+	}
+}
+
+/* Large screens */
+@media (min-width: 60rem) {
+	.l-full {
+		width: 100%;
+		margin-bottom: $hspace;
+	}
+
+	.l-2 {
+		width: 2/$columns*100%;
+	}
+
+	.l-3 {
+		width: 3/$columns*100%;
+	}
+
+	.l-4 {
+		width: 4/$columns*100%;
+	}
+
+	.l-5 {
+		width: 5/$columns*100%;
+	}
+
+	.l-6 {
+		width: 6/$columns*100%;
+	}
+
+	.l-7 {
+		width: 7/$columns*100%;
+	}
+
+	.l-8 {
+		width: 8/$columns*100%;
+	}
+
+	.l-9 {
+		width: 9/$columns*100%;
+	}
+
+	.l-10 {
+		width: 10/$columns*100%;
+	}
+}
