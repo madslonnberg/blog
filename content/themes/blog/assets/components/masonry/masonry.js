@@ -10,14 +10,19 @@ angular.module('masonryModule', [])
             var grid = element[0];
             var msnry;
 
-            msnry = new Masonry(grid, {
-                itemSelector: '.item',
-                gutter: '.gutter',
-                columnWidth: '.sizer',
-                percentPosition: true
+            imagesLoaded(grid, function(){
+              msnry = new Masonry(grid, {
+                  itemSelector: '.item',
+                  gutter: '.gutter',
+                  columnWidth: '.sizer',
+                  percentPosition: true
+              });
+
+              msnry.layout();
             });
 
-            msnry.layout();
+
+
 
         }
     };

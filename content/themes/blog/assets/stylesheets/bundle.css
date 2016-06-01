@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis);
+.grid {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 5%; }
+
 html {
   font-size: 1rem; }
 
@@ -9,12 +14,13 @@ body {
   line-height: 1.618;
   color: #333; }
 
+* {
+  font-weight: 400 !important; }
+
 p {
   margin-bottom: 1.3rem;
-  line-height: 1.618; }
-  @media (min-width: 768px) {
-    p {
-      font-size: 1.4rem; } }
+  line-height: 1.618;
+  font-size: 1rem; }
 
 h1 {
   font-size: 2.441em; }
@@ -23,78 +29,118 @@ h2 {
   font-size: 1.953em; }
 
 h3 {
-  font-size: 1.563em; }
+  font-size: 1.563em;
+  margin: 0; }
 
 h4 {
   font-size: 1.25em; }
 
-small,
+.small,
 .font_small {
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 
-@media (min-width: 425px) {
-  h1,
-  h2,
-  h3,
-  h4 {
-    margin: 1.414rem 0 0.5rem;
-    font-weight: inherit; }
-  h1 {
-    font-size: 3.157rem; }
-  h2 {
-    font-size: 2.369rem; }
-  h3 {
-    font-size: 1.777rem; }
-  h4 {
-    font-size: 1.333rem; }
-  small,
-  .font_small {
-    font-size: 0.75rem; } }
-
-.panel .item {
-  position: relative; }
-  .panel .item .caption {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 600; }
-
-.panel img {
-  display: block;
+.masonry .item, .masonry .sizer {
   width: 100%; }
+  @media (min-width: 475px) {
+    .masonry .item, .masonry .sizer {
+      width: 49.5%; } }
+  @media (min-width: 768px) {
+    .masonry .item, .masonry .sizer {
+      width: 32.66667%; } }
+  @media (min-width: 1024px) {
+    .masonry .item, .masonry .sizer {
+      width: 24.25%; } }
+  @media (min-width: 1200px) {
+    .masonry .item, .masonry .sizer {
+      width: 19.2%; } }
 
-.panel .item {
-  float: left; }
+@media (min-width: 768px) {
+  .masonry .big {
+    width: 65.33333%; } }
 
-.panel .sizer, .panel .item {
-  width: 50%; }
-  @media (min-width: 670px) {
-    .panel .sizer, .panel .item {
-      width: 33.33333%; } }
+@media (min-width: 1024px) {
+  .masonry .big {
+    width: 48.5%; } }
+
+@media (min-width: 1200px) {
+  .masonry .big {
+    width: 38.4%; } }
+
+.masonry .item {
+  background: #f5f2ef;
+  margin-bottom: 10px; }
+
+.masonry .gutter {
+  width: 1%; }
 
 * {
   box-sizing: border-box; }
 
+img {
+  width: 100%; }
+
 body {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  min-height: 100vh;
+  background: url("../images/pattern.png"); }
 
 aside {
-  width: 10vw;
-  background: red; }
+  width: 15vw;
+  background: #f0aa47;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media (min-width: 425px) {
+    aside {
+      width: 12vw; } }
+  @media (min-width: 550px) {
+    aside {
+      width: 10vw; } }
+  @media (min-width: 650px) {
+    aside {
+      width: 8vw; } }
+  @media (min-width: 880px) {
+    aside {
+      width: 7vw; } }
+  @media (min-width: 1024px) {
+    aside {
+      width: 5vw; } }
+  aside .bars {
+    margin-top: 1rem; }
 
 main {
-  width: 90vw; }
+  width: 85vw;
+  background: #f1eadf; }
+  @media (min-width: 425px) {
+    main {
+      width: 88vw; } }
+  @media (min-width: 550px) {
+    main {
+      width: 90vw; } }
+  @media (min-width: 650px) {
+    main {
+      width: 92vw; } }
+  @media (min-width: 880px) {
+    main {
+      width: 93vw; } }
+  @media (min-width: 1024px) {
+    main {
+      width: 95vw; } }
 
-.item, .sizer {
-  width: 30%; }
+.item, img {
+  border-radius: 11px 11px 0px 0px;
+  background: #f5f2ef; }
 
 .item {
-  height: 100px;
-  background: red;
-  margin-bottom: 10px; }
+  margin-bottom: 40px; }
 
-.gutter {
-  width: 10px; }
+.text {
+  padding: 3%; }
+  .text .title, .text .author {
+    color: #443631; }
+  .text p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
