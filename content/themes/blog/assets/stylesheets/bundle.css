@@ -80,13 +80,15 @@ img {
   width: 100%; }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   min-height: 100vh;
   background: url("../images/pattern.png"); }
 
 aside {
   width: 15vw;
+  height: 100vh;
+  position: fixed;
   background: #f0aa47;
   color: white;
   display: -ms-flexbox;
@@ -112,8 +114,31 @@ aside {
     margin-top: 1rem; }
 
 main {
+  float: right;
   width: 85vw;
   background: #f1eadf; }
+  main .bar {
+    padding: 3px;
+    background: rgba(53, 42, 39, 0);
+    color: #dad8d8;
+    margin-bottom: 0.5rem;
+    float: right; }
+    main .bar span {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer; }
+      main .bar span.comment, main .bar span.heart {
+        margin-left: 0.9rem; }
+      main .bar span.fa {
+        margin-left: 3px; }
+      main .bar span.heart:hover {
+        color: #f91f1f; }
+      main .bar span.comment:hover {
+        color: #a8a3a3; }
+      main .bar span.fa-comment {
+        position: relative;
+        top: -2px; }
   @media (min-width: 425px) {
     main {
       width: 88vw; } }
