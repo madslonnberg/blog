@@ -4,6 +4,37 @@
   margin: 0 auto;
   padding: 5%; }
 
+#post > .content {
+  background: #f5f2ef; }
+
+#post .text {
+  background: #f5f2ef; }
+
+#post .title, #post .date {
+  margin: 0; }
+
+#post .footer {
+  display: -ms-flexbox;
+  display: flex; }
+  #post .footer .img {
+    width: 33.33333%;
+    background: url("/assets/images/mads.jpg?v=db6a06c2e8") 0 0 no-repeat;
+    background-size: cover; }
+  #post .footer .author-details {
+    width: 66.66667%;
+    padding: 2.5% 5%;
+    background: #e7e0d9;
+    display: -ms-flexbox;
+    display: flex; }
+    #post .footer .author-details .content .name, #post .footer .author-details .content .description {
+      margin: 0; }
+    #post .footer .author-details .content .name {
+      color: #443631; }
+    #post .footer .author-details .content .description {
+      font-size: 0.8rem; }
+    #post .footer .author-details .content .more a {
+      color: black; }
+
 html {
   font-size: 1rem; }
 
@@ -82,8 +113,7 @@ img {
 body {
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 100vh;
-  background: url("../images/pattern.png"); }
+  min-height: 100vh; }
 
 aside {
   width: 15vw;
@@ -116,7 +146,8 @@ aside {
 main {
   float: right;
   width: 85vw;
-  background: #f1eadf; }
+  background: #f1eadf;
+  min-height: 100vh; }
   main .bar {
     padding: 3px;
     background: rgba(53, 42, 39, 0);

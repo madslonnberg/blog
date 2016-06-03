@@ -2,11 +2,43 @@
 <html>
 {{> head}}
 
-<body ng-app="ganesh">
-  {{#post}}
-    <main>
+<body>
+  {{> aside}} {{#post}}
 
-    </main>
+  <main id="post">
+    <div class="grid content">
+      <img src="http://www.planwallpaper.com/static/images/cool-wallpapers-hd-8087-8418-hd-wallpapers.jpg" alt="">
+      <div class="text">
+        <h1 class="title">The Title</h1>
+        <h5 class="date">01/04/2016</h5>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea error voluptatem qui quis enim possimus repellat ullam eos pariatur culpa magni quibusdam dolore, esse facilis excepturi dolorem aspernatur animi est exercitationem! Possimus alias,
+            cum ipsum magni est autem molestias provident! Quas blanditiis aspernatur possimus! Molestiae magnam voluptatibus sit deleniti vel.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam quod nisi aspernatur ad libero earum animi qui, quos, officia beatae possimus. Beatae quidem fuga, ab explicabo tempore. Maiores, enim!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea error voluptatem qui quis enim possimus repellat ullam eos pariatur culpa magni quibusdam dolore, esse facilis excepturi dolorem aspernatur animi est exercitationem! Possimus alias,
+            cum ipsum magni est autem molestias provident! Quas blanditiis aspernatur possimus! Molestiae magnam voluptatibus sit deleniti vel.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et veniam quod nisi aspernatur ad libero earum animi qui, quos, officia beatae possimus. Beatae quidem fuga, ab explicabo tempore. Maiores, enim!</p>
+        </div>
+
+      </div>
+      <div class="footer">
+        <div class="img">
+        </div>
+        <div class="author-details">
+          <div class="content">
+            <h4 class="name">Mads Lønnberg</h4>
+            <p class="small description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <div class="more small"><a href="">more</a> </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+
   {{/post}}
 </body>
 

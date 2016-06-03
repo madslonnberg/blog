@@ -17,7 +17,8 @@ img{
 body{
   justify-content: space-between;
   min-height: 100vh;
-  background: url('../images/pattern.png');
+  // background: url('../images/pattern.png');
+
 }
 
 aside{
@@ -61,6 +62,7 @@ main{
   float: right;
   width:85vw;
   background: hsl(37, 38%, 91%);
+  min-height: 100vh;
 
   .bar{
     padding:3px;
