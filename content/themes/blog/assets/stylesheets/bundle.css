@@ -4,11 +4,35 @@
   margin: 0 auto;
   padding: 5%; }
 
-#post > .content {
-  background: #f5f2ef; }
+@media (min-width: 700px) {
+  .hide-for-700-up {
+    display: none; } }
+
+@media (max-width: 700px) {
+  .show-for-700-up {
+    display: none; } }
+
+#post .grid {
+  max-width: 62.1rem; }
+
+#post #disqus_thread {
+  background: #f5f2ef;
+  padding: 6%; }
+  #post #disqus_thread a {
+    color: #443631 !important; }
 
 #post .text {
+  padding: 0%;
   background: #f5f2ef; }
+  @media (min-width: 700px) {
+    #post .text p {
+      font-size: 1.3rem; } }
+  #post .text .content {
+    padding: 6%;
+    padding-top: 0%; }
+    @media (min-width: 700px) {
+      #post .text .content {
+        padding-top: 4%; } }
 
 #post .title, #post .date {
   margin: 0; }
@@ -26,12 +50,24 @@
     background: #e7e0d9;
     display: -ms-flexbox;
     display: flex; }
+    @media (min-width: 714px) {
+      #post .footer .author-details {
+        padding: 6% 5%; } }
     #post .footer .author-details .content .name, #post .footer .author-details .content .description {
       margin: 0; }
     #post .footer .author-details .content .name {
       color: #443631; }
+      @media (min-width: 700px) {
+        #post .footer .author-details .content .name {
+          font-size: 1.8rem; } }
     #post .footer .author-details .content .description {
       font-size: 0.8rem; }
+      @media (min-width: 700px) {
+        #post .footer .author-details .content .description {
+          font-size: 1rem; } }
+      @media (min-width: 583px) {
+        #post .footer .author-details .content .description {
+          font-size: 1rem; } }
     #post .footer .author-details .content .more a {
       color: black; }
 
@@ -52,12 +88,18 @@ p {
   margin-bottom: 1.3rem;
   line-height: 1.618;
   font-size: 1rem; }
+  @media (min-width: 714px) {
+    p {
+      font-size: 1.1rem; } }
 
 h1 {
-  font-size: 2.441em; }
-
-h2 {
-  font-size: 1.953em; }
+  font-size: 2rem; }
+  @media (min-width: 583px) {
+    h1 {
+      font-size: 2.1rem; } }
+  @media (min-width: 700px) {
+    h1 {
+      font-size: 2.3rem; } }
 
 h3 {
   font-size: 1.563em;
@@ -65,6 +107,10 @@ h3 {
 
 h4 {
   font-size: 1.25em; }
+
+@media (min-width: 700px) {
+  h5 {
+    font-size: 0.9em; } }
 
 .small,
 .font_small {
@@ -194,7 +240,8 @@ main {
   margin-bottom: 40px; }
 
 .text {
-  padding: 3%; }
+  padding: 6%;
+  padding-top: 3%; }
   .text .title, .text .author {
     color: #443631; }
   .text p {

@@ -3,3 +3,15 @@
 	margin: 0 auto;
   padding: 5%;
 }
+
+.hide-for-700-up{
+	@media(min-width:700px){
+		display:none;
+	}
+}
+
+.show-for-700-up{
+	@media(max-width:700px){
+		display:none;
+	}
+}

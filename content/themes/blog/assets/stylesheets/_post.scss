@@ -1,15 +1,40 @@
 #post{
 
   &>.content{
-    background: hsl(30, 23%, 95%);
+    // background: hsl(30, 23%, 95%);
   }
+
+  .grid{
+    max-width: 62.1rem;
+  }
+
+
+  #disqus_thread{
+    background: #f5f2ef;
+    padding:6%;
+
+    a{
+      color: #443631 !important;
+    }
+  }
+
 
 
   .text{
     padding:0%;
     background: #f5f2ef;
+    p{
+      @media(min-width: 700px){
+        font-size: 1.3rem
+      }
+    }
     .content{
-      padding:3%;
+      padding:6%;
+      padding-top:0%;
+
+      @media(min-width: 700px){
+        padding-top: 4%;
+      }
     }
   }
 
@@ -30,8 +55,11 @@
       width: 2/3*100%;
       padding: 2.5% 5%;
       background: hsl(30,23%,88%);
-
       display: flex;
+
+      @media(min-width: 714px){
+        padding: 6% 5%;
+      }
 
       .content{
         .name, .description{
@@ -40,10 +68,20 @@
 
         .name{
           color: hsl(16, 16%, 23%);
-
+          @media(min-width: 700px){
+            font-size: 1.8rem;
+          }
         }
         .description{
           font-size: 0.8rem;
+
+          @media(min-width: 700px){
+            font-size: 1rem;
+          }
+
+          @media(min-width: 583px){
+            font-size: 1rem;
+          }
         }
 
         .more{
