@@ -163,14 +163,16 @@ body {
 
 aside {
   width: 15vw;
-  height: 100vh;
   position: fixed;
   background: #f0aa47;
   color: white;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem; }
   @media (min-width: 425px) {
     aside {
       width: 12vw; } }

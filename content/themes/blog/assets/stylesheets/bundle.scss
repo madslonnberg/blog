@@ -24,12 +24,14 @@ body{
 aside{
 
   width:15vw;
-  height: 100vh;
   position: fixed;
   background: hsl(35, 85%, 61%);
   color:white;
   display: flex;
   justify-content: center;
+  height: 100%;
+  padding-left:1rem;
+  padding-right:1rem;
 
 
   @media(min-width: 425px){
